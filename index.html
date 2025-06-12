@@ -1,174 +1,408 @@
-<html>
-    <head>
-        <title></title>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.0/css/font-awesome.css" integrity="sha512-CB+XYxRC7cXZqO/8cP3V+ve2+6g6ynOnvJD6p4E4y3+wwkScH9qEOla+BTHzcwB4xKgvWn816Iv0io5l3rAOBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Siddharth Group of Institutions</title>
+  <style>
+    :root {
+      --primary: #2e86de;
+      --accent: #f39c12;
+      --bg-light: #f7f9fc;
+      --text-light: #2c3e50;
+      --card-light: #ffffff;
+      --bg-dark: #121212;
+      --text-dark: #ffffff;
+      --card-dark: #1e1e1e;
+      --transition: 0.3s ease;
+    }
 
-        <style>
-            body{
-                background-image: url('WhatsApp Image 2025-05-02 at 01.10.10_79ea8020.jpg');
-                background-repeat:no-repeat;
-                background-size:cover;
-                position:flex;
-                
-                
-            }
-            header{
-                width:100%;
-                height:100px;
-                
-               
-            }
-            nav{
-                width:100%;
-                height:50px;
-                position:absolute;
-                top:125px;
-                font-size: 20px;
-                
-                
-            }
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      
+      background-color: var(--bg-light);
+      color: var(--text-light);
+      margin: 0;
+      padding: 0;
+      transition: var(--transition);
+    }
 
-            section{
-                width:39%;
-                height:300px;
-                background-color:#62cfd6;
-                margin:auto;
-                margin-top:100px;
-                text-align:center;
-                padding: 50px;
-                display:block;
-                border-radius: 20px;
-                border: 5px solid black;
-            }
-            .pos{
-                margin:auto;
-                padding:100px;
-            }
-            .buttons button{
-                background-color: green;
-                color:white;
-                margin:20px;
-                font-size:20px;
-                margin-top:auto;
-                text-align:center;
-                box-shadow:3px 8px 3px black'
-                
-                
-            }
-            .buttons button:hover{ 
-                background-color: white;
-                color:black;
-                transition-duration: 1s;          
-            }
-            footer{
-                width:100%;
-                height:50px;
-                background-color: #7575ff;
-                position:absolute;
-                bottom:0px;
-                left:0px;
-            }
-            
-           .t{
-            color:#d4c2e9;
-            text-align: center;
-            font-size: 100px;
-           }
-          
-           
-           .links{
-            position:absolute;
-            top:60px;
-            font-size:20px;
-            left:90%;
-            
-           }
-           a{
-            color:black;
-            margin:10px;
-            text-decoration:none;
-           }
-           li{
-            display:inline;
-            margin:50px;
-            
-           }
-           ul{
-            text-align:center;
-            padding:10px;
-           }
-           .j:hover{
-            color:green;
-            text-decoration: underline;
-            transition-duration: 1s;
-            font-size:25px;
-           }
-           .k:hover{
-            color:green;
-            text-decoration: underline;
-            transition-duration: 1s;
-            font-size:25px;
-           }
-           .l:hover{
-            color:green;
-            text-decoration: underline;
-            transition-duration: 1s;
-            font-size:25px;
-           }
-           .m:hover{
-            color:green;
-            text-decoration: underline;
-            transition-duration: 1s;
-            font-size:25px;
-           }
-        </style>
+    .dark-mode {
         
-    </head>
-    <body>
-        <header>
-            <h1 class="t"><u>Think Champ</u></h1>
-            
-            <div class="links">
-                <a href="https://www.instagram.com/think_cham_p/?hl=en"><i class="fa fa-instagram"></i></a>
-                <a href="https://think-champ.com/"><i class="fa fa-google"></i></a>
-                <a href="https://youtube.com/@thinkchamppvt.ltd.9089?si=COkJZZIvsZGjaHJ_"><i class="fa fa-youtube"></i></a>
-            </div>
-            
-        </header>
-        <nav>
-            <ul>
-                <a href="#" class="j"><li>Home</li></a>
-                <a href="#" class="k"><li>Courses</li></a>
-                <a href="#" class="l"><li>About us</li></a>
-                <a href="#" class="m"><li>Help</li></a>
-            
-            </ul>
-        </nav>
+      background-color: var(--bg-dark);
+      color: var(--text-dark);
+    }
+
+    .h2 {
+      height: 90vh;
+      background-image: url("sitk.png");
+      background-size: cover;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    header h1 {
         
-        <section>
-            <div class="login">
-                <div class="pos">
-                <label class="lab"><i><b>Username:</b></i></label>
-                <input type="text">
-                <br>
-                <br>
-                <br>
-                <label class="lab"><i><b>Password:</b></i></label>
-                <input type="password">
-                </div>
-                <div class="buttons">
-                    <button style="border-radius:6px;">Login</button>
-                    <button style="border-radius:6px;">Register</button>
-                </div>
+      font-size: 3rem;
+      margin: 0;
+      animation: fadeInDown 1s ease;
+    }
 
-            </div>
+    header p {
+      font-size: 1.2rem;
+      margin: 10px 0 20px;
+    }
 
-        </section>
+    nav {
+      background-color: white;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      padding: 15px;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+      transition: var(--transition);
+    }
+
+    nav a {
+      text-decoration: none;
+      color: var(--text-light);
+      font-weight: bold;
+      transition: var(--transition);
+    }
+
+    nav a:hover {
+        font-size: large;
+      color: var(--accent);
+    }
+
+    .dark-mode nav {
+      background-color: #1e1e1e;
+    }
+
+    section {
+      padding: 60px 10%;
+      background-color: var(--card-light);
+      margin-bottom: 20px;
+      border-radius: 12px;
+      box-shadow: 0 8px 18px rgba(0,0,0,0.05);
+      transition: var(--transition);
+    }
+
+    .dark-mode section {
+      background-color: var(--card-dark);
+    }
+
+    h2 {
+      text-align: center;
+      color: var(--primary);
+      margin-bottom: 40px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 30px;
+    }
+
+    .card {
+        box-shadow: 0 8px 20px rgb(23, 25, 26,0.50);
+      background: rgba(255,255,255,0.7);
+      padding: 25px;
+      border-radius: 15px;
+      backdrop-filter: blur(10px);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      text-align: center;
+    }
+
+    .card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 8px 20px rgba(0, 200, 255, 1);
+    }
+
+    .dark-mode .card {
+      background: rgba(30,30,30,0.6);
+    }
+
+    .btn {
+      background: var(--accent);
+      color: white;
+      padding: 12px 25px;
+      border: none;
+      border-radius: 25px;
+      cursor: pointer;
+      font-size: 1rem;
+      transition: transform 0.3s ease;
+    }
+
+    .btn:hover {
+      transform: scale(1.05);
+    }
+
+    .toggle-btn {
+      position: fixed;
+      top: 120px;
+      right: 20px;
+      background: var(--primary);
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 30px;
+      cursor: pointer;
+      font-weight: bold;
+      z-index: 1000;
+      transition: var(--transition);
+    }
+
+    footer {
+      background: #2e86de;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+
+    /* Animations */
+    @keyframes fadeInDown {
+      from { opacity: 0; transform: translateY(-30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    th, td {
+      padding: 12px;
+      text-align: center;
+      border: 1px solid #ccc;
+    }
+
+    .dark-mode table {
+      color: white;
+      border-color: #444;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      max-width: 500px;
+      margin: auto;
+    }
+
+    input, textarea {
+      padding: 12px;
+      font-size: 1rem;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+      transition: var(--transition);
+    }
+
+    .dark-mode input, .dark-mode textarea {
+      background-color: #2b2b2b;
+      color: white;
+      border-color: #555;
+    }
+    .image{
+        margin-top: 50px;
+        display: flex;
+        box-shadow: 0 8px 20px rgb(0, 0, 0);
+        margin: auto;
+        padding: 30px;
+
+    }
+    .h1{
+        height:100px;
+        width:100%;
+        background-color: #ffffff;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        padding-left: 100px;
+    }
+    .name{
+        position: absolute;
+        left:200px;
+        top:10px;
+        
        
-        <footer>
-            <p style="text-align: center;"><i class="fa fa-copyright"></i><b>ThinkChamp.pvt.lmt</b></i></p>
+    }
+    .cou{
+        display: flex;
+        position: absolute;
+      
+    }
+    .log{
+        position: absolute;
+        left:400px;
+    }
+    .nac{
+        position: absolute;
+        left: 900px;
+    }
 
-        </footer>
+  
+  </style>
+</head>
+<body>
 
-    </body>
+  <!-- Dark Mode Toggle -->
+  <button class="toggle-btn" onclick="toggleMode()">🌙 Toggle Mode</button>
+
+  <!-- Header -->
+   <header class="h1">
+    <center>
+    <div class="name">
+        <div class="cou">
+    <img src="header-image-counscode.png" height="80px" width="150px">
+    <img src="sietk-logo.png" height="80px" width="100px">
+    </div>
+    <div class="log">
+    <img src="header-image-clgname.png" height="80px" width="350px">
+    </div>
+    <div class="nac">
+    <img src="header-image-naac-aicte.png" height="80px" width="300px">
+    </div>
+    </center>
+</div>
+    
+    
+   </header>
+  <header class="h2">
+    <h1 style=" text-shadow: 0 4px 8px rgba(0,0,0,1);">Siddharth Group of Institutions</h1>
+    <p style=" text-shadow: 0 4px 8px rgba(0,0,0,1);"">Innovate. Educate. Elevate.</p>
+    <button class="btn" onclick="document.getElementById('admissions').scrollIntoView({behavior: 'smooth'})" style="box-shadow: 0 8px 20px rgb(23, 25, 26,0.50);">Apply Now</button>
+   
+  </header>
+
+  <!-- Navbar -->
+  <nav>
+    <a href="#about">About</a>
+    <a href="#courses">Courses</a>
+    <a href="#departments">Departments</a>
+    <a href="#facilities">Facilities</a>
+    <a href="#admissions">Admissions</a>
+    <a href="#news">News</a>
+    <a href="#results">Results</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <!-- About -->
+  <section id="about">
+    <h2><u>About Us</u></h2>
+    <p>Siddharth Group of Institutions stands at the forefront of innovation and education, offering premier academic programs and state-of-the-art infrastructure to empower future leaders.</p>
+    
+    </section>
+    <section>
+    <center>
+        <h2><u>Campus life</u></h2>
+    <video controls>
+        <source src="Siddhartha group of institutions puttur.mp4">
+    </video>
+    </center>
+  </section>
+
+  <!-- Courses -->
+  <section id="courses">
+    <h2><u>Our Courses</u></h2>
+    <div class="grid">
+      <div class="card"><h3>B.Tech</h3><p>CSE, ECE, MECH, CIVIL</p></div>
+      <div class="card"><h3>MBA</h3><p>Business & Finance</p></div>
+      <div class="card"><h3>Diploma</h3><p>Technical Foundations</p></div>
+      <div class="card"><h3>Pharmacy</h3><p>Healthcare Excellence</p></div>
+    </div>
+  </section>
+
+  <!-- Departments -->
+  <section id="departments">
+    <h2><u>Departments</u></h2>
+    <div class="grid">
+      <div class="card"><h3>Computer Science</h3><p>Dr. A. Kumar</p></div>
+      <div class="card"><h3>Mechanical</h3><p>Dr. B. Reddy</p></div>
+      <div class="card"><h3>Pharmacy</h3><p>Dr. C. Rao</p></div>
+    </div>
+  </section>
+
+  <!-- Facilities -->
+  <section id="facilities">
+    <h2><u>Campus Facilities</u></h2>
+    <div class="grid">
+      <div class="card"><h3>Smart Classrooms</h3></div>
+      <div class="card"><h3>Hostels</h3></div>
+      <div class="card"><h3>Library</h3></div>
+      <div class="card"><h3>Labs</h3></div>
+    </div>
+  </section>
+
+  <!-- Admissions -->
+  <section id="admissions">
+    <center>    <h2>Admissions 2025</h2>
+    <p>Join us to shape your future. Enroll in UG, PG, or Diploma programs. Applications are open now.</p>
+    <button class="btn">Download Brochure</button>
+    </center>
+    
+  </section>
+  <section>
+  <div class="image">
+    <center>
+        <img src="sitk.png" width="500px",height="500px" class="1">
+        <img src="about-sietk-gal.png" width="500px",height="500px" class="2">
+        <img src="images (1).jpeg" width="500px",height="500px" class="3">
+        
+    </center>
+</div>
+</section>
+
+  <!-- News -->
+  <section id="news">
+    <h2>Latest News</h2>
+    <div class="grid">
+      <div class="card"><h4>AI Seminar</h4><p>June 2025</p></div>
+      <div class="card"><h4>Placement Drive</h4><p>Infosys, Wipro, TCS</p></div>
+      <div class="card"><h4>Annual Fest</h4><p>October 2025</p></div>
+    </div>
+  </section>
+
+  <!-- Results -->
+  <section id="results">
+    <h2>Exam Results</h2>
+    <table>
+      <tr><th>Course</th><th>Semester</th><th>Date</th><th>Link</th></tr>
+      <tr><td>B.Tech CSE</td><td>6th Sem</td><td>June 2025</td><td><a href="#">View</a></td></tr>
+      <tr><td>MBA</td><td>2nd Sem</td><td>June 2025</td><td><a href="#">View</a></td></tr>
+    </table>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea rows="4" placeholder="Your Message" required></textarea>
+      <button class="btn" type="submit">Send</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    &copy; 2025 Siddharth Group of Institutions
+  </footer>
+
+  <script>
+    function toggleMode() {
+      document.body.classList.toggle('dark-mode');
+    }
+  </script>
+</body>
 </html>
